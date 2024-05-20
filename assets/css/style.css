@@ -100,7 +100,7 @@ animation: mover 4s;
 }
 
 
-main{
+.main{
 display: grid;
 grid-template-columns: 1fr;
 gap: 1rem;
@@ -149,7 +149,7 @@ font-size: 1rem;
 color: #fff;
  }
 
-.footer i{
+footer  i{
 font-size:25px;
 }
 
@@ -161,11 +161,11 @@ font-size:25px;
 
 
 
-menu{
+.menu{
 grid-area: menu;
 }
 
-section{
+.section{
 grid-area: filtro;
 
 }
@@ -174,7 +174,7 @@ main{
 grid-area: main;
 }
 
-footer{
+.footer{
 grid-area: footer;
 }
 
@@ -223,7 +223,7 @@ main{
   
  }
 
- section{
+section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,7 +234,7 @@ main{
 
 
 
-  .numeros {
+.numeros{
     display: flex;
     align-content: center;
     padding-left: 2rem;
@@ -311,6 +311,7 @@ section{
     align-items: center;
     
 }
+
 
 
 .numeros {
