@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #344c64;
+    color: #fff;
+     }
+
+
+menu{
+grid-area: menu;
+}
+
+.nav-menu img{
+    width: 150px;
+    height: 100px;   
+}
+
+section{
+grid-area: filtro;
+}
+
+main{
+grid-area: main;
+}
+
+footer{
+grid-area: footer;
+}
+
+
+
+
+button{
+border-radius: 10px;
+background: black;
+color:white;
+width: 100px;
+}
+
+
+
+.nav{
+display: flex;
+align-items: center;
+justify-content:space-between;
+margin: 0px;
+padding-right: 2rem;
+background: #12012c;
+color: #fff;
+}
+
+.nav-menu {
+display: flex;
+justify-content: center;
+align-items: center; 
+font-size: 25px;   
+}
+
+.barra{
+    font-size: larger;
+    color: white;
+    display: none;
+}
+
+
+.value{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 7px;
+    height:32px;
+    width: 15rem;
+}
+
+
+.card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 2rem  2rem;
+background-color:#344c64;
+padding: 2rem;
+filter: grayscale(100%);
+transition: filter 0.3s  ease-in;
+}
+
+.card img {
+height:10rem;
+width: 10rem;
+
+}
+
+.img{
+transform-style: preserve-3d;
+position: relative;
+transition: transform 0.6;
+animation: mover 4s;
+}
+
+
+main{
+display: grid;
+grid-template-columns: 1fr;
+gap: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: 1rem;
+}
+
+.numeros{
+display: flex;
+justify-content:center;
+align-items:center;
+padding-right: 2rem;
+padding-bottom: 3rem;
+padding-top: 12rem;
+gap: 20px;
+ }
+
+.footer{
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+text-align:center;
+color: white;
+background: black;
+margin: 0;
+ }
+
+
+.footer p{
+    margin: 0.5rem;
+    margin-bottom:0.5rem;
+}
+
+.footer i {
+margin: 0.5rem;
+padding: 0;
+}
+
+.footer a {
+display: flex;
+justify-content: center;
+align-items: center;
+gap:1rem;
+font-size: 1rem;
+color: #fff;
+ }
+
+.footer i{
+font-size:25px;
+}
+
+.footer h5{
+    border-bottom: 2px solid white;
+    animation: raya 5s linear infinite;
+    font-size: 18px;
+}
+
+
+
+menu{
+grid-area: menu;
+}
+
+section{
+grid-area: filtro;
+
+}
+
+main{
+grid-area: main;
+}
+
+footer{
+grid-area: footer;
+}
+
+nav{
+grid-area: numeros;
+}
+
+
+@media (min-width:576px) {
+
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-areas:
+        "menu menu"
+        "filtro main"
+        "filtro numeros"
+        "footer footer";
+    }
+
+.icono_1{
+    display:flex ;
+}
+
+.barra{
+    display: none;
+    
+}
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+    
+    }
+  
+ }
+
+ section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff
+  }
+
+
+
+
+
+  .numeros {
+    display: flex;
+    align-content: center;
+    padding-left: 2rem;
+    padding-right: 9rem;
+
+}
+
+
+
+
+
+
+@media (min-width:993px){
+
+    .contenedor-grid{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 20% 80%;
+        grid-template-areas:
+        "menu filtro"
+        "menu main"
+        "menu main"
+        "footer numeros";
+         }
+   
+    .nav{
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+      
+
+}
+
+.icono_1{
+    display: none;
+}
+
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gainsboro;
+    margin: 0px  0px ;
+    gap: 20px;
+    
+
+   
+}
+
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+    
+}
+
+
+.numeros {
+    display: flex;
+    align-content: center;
+    align-self: center;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background:black;
+
+}
+
+
+ }
